@@ -1,8 +1,12 @@
 <mat-toolbar color="primary">
   <a aria-label="Home" [routerLink]="['/']">Welcome to the Angular Sandbox</a>
+  <span class="flex-spacer"></span>
+  <button type="button" mat-button [routerLink]="['/todo']">Todo List</button>
 </mat-toolbar>
 <mat-sidenav-container>
-  <mat-sidenav></mat-sidenav>
+  <mat-sidenav mode="side" position="end">
+    Side Nav Info
+  </mat-sidenav>
   <mat-sidenav-content>
     <router-outlet></router-outlet>
   </mat-sidenav-content>

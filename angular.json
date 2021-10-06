@@ -137,6 +137,37 @@
           }
         }
       }
+    },
+    "@angular-sandbox/todo": {
+      "projectType": "library",
+      "root": "projects/angular-sandbox/todo",
+      "sourceRoot": "projects/angular-sandbox/todo/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/angular-sandbox/todo/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/angular-sandbox/todo/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/angular-sandbox/todo/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angular-sandbox/todo/src/test.ts",
+            "tsConfig": "projects/angular-sandbox/todo/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-sandbox/todo/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "user-interface"

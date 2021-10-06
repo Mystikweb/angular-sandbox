@@ -6,6 +6,10 @@
       "@angular-sandbox/shared": [
         "dist/angular-sandbox/shared/angular-sandbox-shared",
         "dist/angular-sandbox/shared"
+      ],
+      "@angular-sandbox/todo": [
+        "dist/angular-sandbox/todo/angular-sandbox-todo",
+        "dist/angular-sandbox/todo"
       ]
     },
     "baseUrl": "./",
