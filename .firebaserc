@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "angular-sandbox-e9709"
+  },
+  "targets": {
+    "angular-sandbox-e9709": {
+      "hosting": {
+        "user-interface": [
+          "angular-sandbox-e9709"
+        ]
+      }
+    }
   }
 }

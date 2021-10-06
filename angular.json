@@ -100,6 +100,10 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     },
@@ -107,7 +111,7 @@
       "projectType": "library",
       "root": "projects/angular-sandbox/shared",
       "sourceRoot": "projects/angular-sandbox/shared/src",
-      "prefix": "lib",
+      "prefix": "shared",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
